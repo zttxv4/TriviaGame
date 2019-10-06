@@ -13,7 +13,7 @@ $("input:checkbox").on('click', function() {
   });
 
 // Timer
-var number = 10;
+var number = 30;
 var intervalID;
 
 function run() {
@@ -25,7 +25,7 @@ function decrement() {
 
     number--;
 
-    $("#timer").html("<h3>Time Remaining: " + number + "</h3>");
+    $("#timer").html("<h3>Time Remaining: :" + number + "</h3>");
 
     if (number === 0) {
         stop();
@@ -58,28 +58,106 @@ var correct = 0;
 var incorrect = 0;
 
 
-    $('input[class="correct1"]').click(function(){
+
+    $('input[class="correct1"]' ,).click(function(){
         if($(this).is(":checked")){
             correct++;
         }
-        else {
-            incorrect++;
-        }
+        
     });
 
     $('input[class="correct2"]').click(function(){
         if($(this).is(":checked")){
             correct++;
         }
-        else {
-            incorrect++;
+        
+    });
+
+    $('input[class="correct3"]').click(function(){
+        if($(this).is(":checked")){
+            correct++;
         }
+        
+    });
+
+    $('input[class="correct4"]').click(function(){
+        if($(this).is(":checked")){
+            correct++;
+        }
+        
     });
 
 
-function results() {
+
+
+    $('input[class="incorrect1a"]' ,).click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect1b"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect2a"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect2c"]' ,).click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect3b"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect3c"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect4c"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+    $('input[class="incorrect4a"]').click(function(){
+        if($(this).is(":checked")){
+            incorrect++;
+        }
+        
+    });
+
+
+
+
+// Function that displays the results when timer is up or submit button is picked
+
+    function results() {
         $("#correctanswers").html("<h2> Correct: " + correct);
         $("#incorrectanswers").html("<h2> Incorrect: " + incorrect);
+        $("#correctanswer1").html("<h3> Correct answer: 200");
+        $("#correctanswer2").html("<h3> Correct answer: 142.2");
+        $("#correctanswer3").html("<h3> Correct answer: Barbeque");
+        $("#correctanswer4").html("<h3> Correct answer: Quinton Lucas");
     }
 
 $("#submitbutton").click(function() {

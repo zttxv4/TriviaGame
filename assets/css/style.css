@@ -1,8 +1,22 @@
 .container {
     text-align: center;
-    background: red;
+    background: rgb(145, 142, 142);
     margin-right: 200px;
     margin-left: 200px;
-    color: white
- 
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative
+}
+
+body {
+    background-image: url(https://villagetours.net/lmg-cms/wp-content/uploads/2019/07/kansas-city.jpg);
+    position: absolute
+}
+
+h1 {
+    background: rgb(21, 142, 199)
+}
+
+#timer {
+    text-decoration: underline
 }
